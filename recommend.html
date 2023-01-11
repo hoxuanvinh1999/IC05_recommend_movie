@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/recommend.css">
+  <link rel="stylesheet" href="css/decoration_menu.css">
+  <script src="js_function/menu.js"></script>
+  <title>IC05</title>
+</head>
+
+<body>
+  <div class="menu-btn">
+    <img class="menu-icon" src="images/menu-icon.png" alt="Menu Icon">
+  </div>
+  <!-- Create the menu -->
+  <div class="menu">
+    <ul>
+      <li>Introduction</li>
+      <li>Recommend</li>
+      <li>Graph</li>
+      <li>Network Graph</li>
+    </ul>
+  </div>
+  <h1>Movie Recommendation Form</h1>
+  <button id="themeButton"><i class="fa fa-lightbulb-o"></i></button>
+  <div id="recommendationWindow">
+    <form id="recommendationForm">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="types">Types (separated by commas):</label><br>
+      <input type="text" id="types" name="types"><br>
+      <label for="year">Year:</label><br>
+      <input type="number" id="year" name="year"><br>
+      <label for="audienceRating">Audience Rating (0-100):</label><br>
+      <input type="number" id="audienceRating" name="audienceRating"><br>
+      <label for="expertRating">Expert Rating (0-100):</label><br>
+      <input type="number" id="expertRating" name="expertRating"><br>
+      <label for="rating">Rating (G, PG, PG-13, R, NR):</label><br>
+      <input type="text" id="rating" name="rating"><br>
+      <button type="button" onclick="recommendMovie()">Recommend Movie</button>
+    </form>
+  </div>
+  <!-- <div id="imageDiv">
+    <button id="prevButton" onclick="prevImage()">&lt;</button>
+    <img src="images/difference_pie_action.png" alt="image" id="plot">
+    <button id="nextButton" onclick="nextImage()">&gt;</button>
+  </div> -->
+  <!-- <div class="stats">
+    <p>Mean Audience Rating: <span id="meanAudienceRating">60.9508886551132</span></p>
+    <p>Mean Expert Rating: <span id="meanExpertRating">60.6143676867687</span></p>
+    <p>Most number of movies: <span id="meanExpertRating">Drama with 5820 movies</span></p>
+  </div> -->
+  <!-- <div class="network_graph">
+    <iframe src="network_graph/graph_colored.html" frameborder="0" id="iframe"></iframe>
+    <button id="prevButton" onclick="prevFrame()">&lt;</button>
+    <button id="nextButton" onclick="nextFrame()">&gt;</button>
+  </div> -->
+  <br>
+  <div>
+    <div class="movie_name_title">Movie Name</div>
+    <div class="movie_rating">Rating</div>
+    <div class="movie_types">Types</div>
+    <div class="movie_year">Year</div>
+    <div class="movie_duration">Duration</div>
+    <div class="movie_audience_rating">Audience Rating</div>
+    <div class="movie_expert_rating">Expert Rating</div>
+  </div>
+  <ol id="result">
+  </ol>
+  <br>
+  <div id="recommendation"></div>
+  <button class="next_button" onclick="showNextPage()">Next page</button>
+  <script src="js_function/recommend.js"></script>
+</body>
+<div class="footer-basic">
+  <footer>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">HO Xuan Vinh - NGUYEN Gia Hoa</a></li>
+    </ul>
+    <p class="copyright">UTC IC05 © A22</p>
+  </footer>
+</div>
+
+</html>

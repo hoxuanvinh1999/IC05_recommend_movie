@@ -1,0 +1,173 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+body {
+    min-height: 150%;
+    /* background-image: url("/static/white_background.png"); */
+    background-blend-mode:  overlay;
+    background-size: cover;
+    width: 100%px;
+    background-color: white;
+    color: black;
+}
+/* Dark theme styles */
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+/* Button styles */
+#themeButton {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+#themeButton i {
+  color: #00cc66;
+}
+
+#themeButton.dark i {
+  color: white;
+}
+h1 {
+  padding-left: 50px;
+  font-size: 3em;
+  text-align: left;
+  color: #00cc66;
+}
+.footer-basic {
+    position: fixed;
+    left: 25%;
+    bottom: 0;
+    width: 50%;
+    padding: 40px 0;
+    background-color: transparent;
+    color: #4b4c4d;
+    height: 30px;
+  }
+  
+  
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:12px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:15px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:12px;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:10px;
+    text-align:center;
+    font-size:9px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+/* Style the button */
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Make the button a circle */
+    background-color: green;
+    text-align: left; 
+  }
+  /* Style the menu */
+  /* Style the menu */
+.menu {
+  position: fixed;
+  top: 60px;
+  left: 10px;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* set the menu to be transparent */
+  display: none;
+  border: 2px solid #00cc66;
+  border-radius: 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  height: 400px;
+}
+  /* Style the menu icon */
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%); /* Invert the color of the menu icon */
+  }
+
+  /* Add more decoration for the menu items */
+/* Make the buttons inside the menu bigger */
+.menu li {
+  display: block;
+  width: 100%; 
+  max-width: 100%; /*set the max-width to be the same as the container */
+  text-align: left;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 20px;
+  overflow: hidden;
+  border-bottom: 1px solid #00cc66;
+}
+  
+  /* Change the color of menu items on hover */
+  .menu li:hover {
+    background-color: lightgreen; /* Change the background color on hover */
+    cursor: pointer; /* Change the cursor to pointer */
+  }
+
+  /* Remove the dots before each menu item */
+.menu ul {
+    list-style-type: none;
+    padding-left: 0px; /* Remove the bullets */
+  }
+  

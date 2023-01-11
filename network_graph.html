@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/decoration_menu.css">
+        <link rel="stylesheet" href="css/network_graph.css">
+        <script src="js_function/menu.js"></script>
+        <title>Network Graph</title>
+    </head>
+  <body>
+     <div class="menu-btn">
+      <img class="menu-icon" src="images/menu-icon.png" alt="Menu Icon">
+    </div>
+    <!-- Create the menu -->
+    <div class="menu">
+      <ul>
+        <li>Introduction</li>
+        <li>Recommend</li>
+        <li>Graph</li>
+        <li>Network Graph</li>
+      </ul>
+    </div>
+    <h1>Network Graph</h1>
+    <button id="themeButton"><i class="fa fa-lightbulb-o"></i></button>
+    <div id="title">
+        Difference Pie Action
+    </div>
+    <div class="network_graph">
+        <button id="prevButton" onclick="prevFrame()">&lt;</button>
+        <iframe src="network_graph/graph_colored.html" frameborder="0" id="iframe"></iframe>
+        <button id="nextButton" onclick="nextFrame()">&gt;</button>
+    </div>
+    <div id="description">
+        This graph shows the difference of audience rating and expert rating of Action movie    
+    </div>
+    <script src="js_function/network_graph.js"></script>
+    <script src="js_function/recommend.js"></script>
+  </body>
+  <div class="footer-basic">
+    <footer>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">HO Xuan Vinh - NGUYEN Gia Hoa</a></li>
+        </ul>
+        <p class="copyright">UTC IC05 © A22</p>
+    </footer>
+</div>
+</html>
