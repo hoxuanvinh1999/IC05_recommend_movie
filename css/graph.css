@@ -110,7 +110,7 @@ h1 {
 
 
 
-  #imageDiv, #title, #description {
+  #imageDiv, #title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,13 +129,13 @@ h1 {
 #prevButton:hover, #nextButton:hover {
   background-color: #009944;
 }
-#description {
+/* #description {
     border: 2px solid #00cc66;
     border-radius: 10px;
     padding: 10px;
     width: 50%;
     text-align: center;
-}
+} */
 #plot {
     max-height: 600px;
 }

@@ -14,9 +14,14 @@ function showResult(result) {
     var data_film = []
     data_film.push(element["movie_name"], element["rating"], element["types"], element["year"], element["duration"], element["audience_rating"], element["expert_rating"]);
 
+    var modifiedName = element["movie_name"].toLowerCase().replace(/[^a-z\s]/g, "").replace(/\s/g, "_"); 
+    var link = `https://www.rottentomatoes.com/m/${modifiedName}`;
+    var aTag = document.createElement("a");
+    aTag.href = link;
+    aTag.innerHTML = element["movie_name"];
     var p_movie_name = document.createElement("div");
-    p_movie_name.textContent = element["movie_name"]
     p_movie_name.classList.add("movie_name");
+    p_movie_name.appendChild(aTag)
 
     var p_movie_rating = document.createElement("div");
     p_movie_rating.textContent = element["rating"]

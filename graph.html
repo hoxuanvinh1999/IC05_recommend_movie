@@ -3,7 +3,7 @@
         <link rel="stylesheet" href="css/decoration_menu.css">
         <link rel="stylesheet" href="css/graph.css">
         <script src="js_function/menu.js"></script>
-        <title>Graph</title>
+        <title>IC05-Graph</title>
     </head>
   <body>
      <div class="menu-btn">
@@ -13,23 +13,28 @@
     <div class="menu">
       <ul>
         <li>Introduction</li>
+        <li>Method</li>
         <li>Recommend</li>
         <li>Graph</li>
         <li>Network Graph</li>
+        <li>Conclusion</li>
       </ul>
     </div>
     <h1>Graph</h1>
     <button id="themeButton"><i class="fa fa-lightbulb-o"></i></button>
+    <img class="logo" src="images/logo.png" alt="Logo">
     <div id="title">
-        Difference Pie Action
+      Divergence entre la classification des films par les experts et le public
     </div>
     <div id="imageDiv">
       <button id="prevButton" onclick="prevImage()">&lt;</button>
-      <img src="images/difference_pie_action.png" alt="image" id="plot">
+      <img src="images/difference_pie_all.png" alt="image" id="plot">
       <button id="nextButton" onclick="nextImage()">&gt;</button>
     </div>
-    <div id="description">
-        This graph shows the difference of audience rating and expert rating of Action movie
+    <div id="description" class="content">
+       <p>
+        Ce graphique illustre la différence entre les notes attribuées aux films par le public et les critiques. Cette divergence provient du nombre de points sur une échelle de 100 points que chaque groupe attribue à chaque film. Pour rendre le graphique plus compréhensible, nous avons classé les films en fonction du nombre de points attribués. Par exemple, dans la plage 1-20 est la classe 1, 21-40 est la classe 2, ..., 80-100 est la classe 5. La différence est calculée en utilisant la différence absolue entre les deux côtés. Une différence de 5 signifie que le film est très bien noté d'un côté mais sous-estimé de l'autre. Une différence de 0 signifie que le film est évalué de la même manière des deux côtés. Dans le graphique, nous pouvons également remarquer que les films qui ont une différence de 2 ou plus sont relativement peu nombreux par rapport aux autres films. Cela peut indiquer que les opinions des critiques et du public sont généralement similaires pour la plupart des films. Cependant, il est important de noter que cela dépendra également de la population cible et des films analysés. Il serait intéressant de comparer les résultats avec d'autres genres de films ou avec un échantillon de films plus large pour obtenir une image plus complète de la situation. Il est également important de noter que la différence ne donne pas nécessairement une indication de la qualité du film, mais plutôt de l'écart entre les deux côtés.
+       </p>
     </div>
     <script src="js_function/graph.js"></script>
     <script src="js_function/recommend.js"></script>

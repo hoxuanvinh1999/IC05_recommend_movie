@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
         case "introduction":
           window.location.href = "main.html";
           break;
+        case "method":
+          window.location.href = "method.html";
+          break;
         case "recommend":
           window.location.href = "recommend.html";
           break;
@@ -35,6 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
         case "network graph":
           window.location.href = "network_graph.html";
+          break;
+        case "conclusion":
+          window.location.href = "conclusion.html";
           break;
       }
     });
